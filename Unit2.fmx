@@ -1,0 +1,49 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'To Do List app'
+  ClientHeight = 340
+  ClientWidth = 424
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 40.000000000000000000
+    Text = 'Add Task:'
+    TabOrder = 1
+  end
+  object TaskEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 48.000000000000000000
+    Position.Y = 65.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object TaskListBox: TListBox
+    Position.X = 48.000000000000000000
+    Position.Y = 120.000000000000000000
+    TabOrder = 3
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = TaskListBoxItemClick
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 196.000000000000000000
+  end
+  object AddButton: TButton
+    Position.X = 288.000000000000000000
+    Position.Y = 65.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'ADD'
+    OnClick = AddButtonClick
+  end
+end

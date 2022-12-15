@@ -1,32 +1,22 @@
-# Prerequisites
-*.d
+# gitignore for C++ Builder projects
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# ignore all files in the Win32 directory
+Win32/*
 
-# Precompiled Headers
-*.gch
-*.pch
+# ignore all files in the Debug directory
+Win32/Debug/*
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# ignore all files in the Release directory
+Win32/Release/*
 
-# Fortran module files
-*.mod
-*.smod
+# ignore all files in the __history directory
+__history/*
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# ignore all files in the __astcache directory
+__astcache/*
 
-# Executables
-*.exe
-*.out
-*.app
+# ignore __recovery directory and all files in the __recovery directory
+__recovery/*
+
+# ignore the file *.cbproj.local
+*.cbproj.local
